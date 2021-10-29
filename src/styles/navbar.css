@@ -1,0 +1,54 @@
+nav {
+    height:12vh;
+    width: 100%;
+    border-bottom: 1px grey solid;
+    background-color: aliceblue;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    
+}
+.nav-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h2{
+    margin: 0 .6em;
+    font-size: 1.3em;
+    font-weight: 300;
+    color: grey;
+    cursor: pointer;
+}
+h1{
+    font-size: 2.4em;
+    margin: 0;
+    cursor: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+.left-icons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+img{
+    cursor: pointer;
+}
+.cart{
+    transform: scale(1.5);
+    cursor: pointer;
+}
