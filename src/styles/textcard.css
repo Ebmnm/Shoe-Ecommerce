@@ -1,0 +1,109 @@
+.text-card {
+    margin-left:10%;
+    position: relative;
+    text-align: left;
+    font-family: sans-serif;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    position:absolute;
+    top:-70px;
+    color:hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-title{
+    font-family: sans-serif;
+    font-size: 2.4em;
+    font-weight:600;
+    white-space: nowrap
+}
+
+.text-p {
+   line-height: 1.8em;
+   font-size: 1em;
+   color:grey;
+}
+.bottom-text-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-text-card h2 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: auto 0;
+}
+
+.bottom-text-card h2 p {
+    margin:0 20px;
+    height: 100%;
+    background-color:hsl(25, 100%, 94%) ;
+    color:hsl(26, 100%, 55%) ;
+}
+
+.last-price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: fit-content;
+    background-color: white;
+    align-items: center;
+}
+
+.quantity button {
+color:hsl(26, 100%, 55%);
+font-size:3em;
+text-align: center;
+background-color: white;
+border: none;
+cursor: pointer;
+height: 70px;
+width: fit-content;
+padding-top: 0;
+margin: 0 5px;
+}
+.quantity button:hover{
+    background-color:hsl(25, 100%, 94%) ; ;
+}
+.quantity p {
+    width: 30px;
+    text-align: center;
+}
+.quantity .minus{
+    font-size: 4em;
+    margin-bottom: 5px;
+}
+
+.add-cart {
+    color:white;
+    background-color:hsl(26, 100%, 55%) ;
+    width: auto;
+    height: 50px;
+    font-size: 1.3em;
+    font-weight: 800;
+    white-space: nowrap;
+    margin-left: 15%;
+    box-shadow: 6px 6px 15px -3px #000000;
+    border: none;
+    border-radius: 1em;
+}
+.add-cart:hover{
+    opacity: .8;
+}
+.button-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}

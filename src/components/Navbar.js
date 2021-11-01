@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <nav>
             <section className="nav-content">
-                <h1>sneakers</h1>
+                <h1 className="logo">sneakers</h1>
                 <div className="nav-text">
                     <h2>Collection</h2>
                     <h2>Men</h2>
