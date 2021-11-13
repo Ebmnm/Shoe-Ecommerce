@@ -6,7 +6,7 @@ function App() {
   const [amount, setAmount] = useState(0)
   const [cartAmount, setCartAmount] = useState(0)
   return (
-   <div>
+   <div className="app">
   <Navbar cartAmount={cartAmount} setCartAmount={setCartAmount} amount={amount} setAmount={setAmount} />
   <Hero setCartAmount={setCartAmount} amount={amount} setAmount={setAmount} />
    </div>

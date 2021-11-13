@@ -6,8 +6,9 @@ nav {
     position: absolute;
     left:0;
     top: 0;
+    overflow: hidden;
 }
-.right-content{
+.left-content{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,13 +28,13 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    line-height: 110px;
     margin-left:20px;
+    
 }
 
 .nav-text h2:hover{
     color: black;
-    border-bottom: 5px solid hsl(26, 100%, 55%) ;
+    border-bottom: 10px solid hsl(26, 100%, 55%) ;
 }
 
 .nav-text h2{
@@ -42,9 +43,7 @@ nav {
     font-weight: 300;
     color: grey;
     cursor: pointer;
-    height: 100%;
- 
-  
+    line-height: 100px;
 }
 .logo{
     font-size: 2.4em;
@@ -55,7 +54,7 @@ nav {
 
 }
 
-.left-icons{
+.right-icons{
     display: flex;
     align-items: center;
     justify-content: end;
@@ -66,7 +65,7 @@ img{
     cursor: pointer;
 }
 
-.left-icons .profile:hover{
+.right-icons .profile:hover{
     border: 3px orange solid;
     border-radius: 50%;
 }
@@ -82,6 +81,47 @@ img{
     border-radius: 50%;
     color:white;
     position: absolute;
-    top:20px;
+    top:15px;
     right:90px;
+}
+
+.menu-icon{
+    display: none;
+   
+}
+
+@media (min-width:1300px) {
+    .nav-text h2 {
+        line-height: 90px;
+    }
+}
+
+@media (max-width: 800px) {
+.menu-icon{
+    display: block;
+    margin: 0 30px;
+}
+.nav-text{
+    display: none;
+}
+
+}
+
+@media (max-width:450px ) {
+    .logo {
+        font-size: 1.5em;
+    }
+    .menu-icon{
+        margin: 0 10px;
+    }
+    .cart{
+        transform: scale(1.1) !important;
+    }
+    .right-icons{
+        margin: 0;
+    }
+
+    .profile{
+        transform: scale(.8);
+    }
 }

@@ -19,23 +19,23 @@ export default function ImageGallery() {
 
     return (
       <>
-        <section className="main">
-          <span className={`img-span `}>
-          <img onClick={imagePop} className={`main-pic`} alt="shoe" src={mainPic}/>
+          <section className="main">
+            <span className={`img-span `}>
+            <img onClick={imagePop} className={`main-pic`} alt="shoe" src={mainPic}/>
+            </span>
+          <span className={`img-popup ${imageModel ? "img-active" : ""}`}>
+          <img onClick={imagePop} className={` ${imageModel ? "img-active-resize" : ""}`} alt="shoe" src={mainPic}/>
           </span>
-        <span className={`img-popup ${imageModel ? "img-active" : ""}`}>
-        <img onClick={imagePop} className={`main-pic ${imageModel ? "img-active-resize" : ""}`} alt="shoe" src={mainPic}/>
-        </span>
-        </section>
-
-        <section className="bottom-pics">
-        <div className="pics-container">
-     <img onClick={changePic} src={productOne} alt="shoe"/>
-     <img onClick={changePic} src={productTwo} alt="shoe"/>
-     <img onClick={changePic} src={productThree} alt="shoe"/>
-     <img onClick={changePic} src={productFour} alt="shoe"/>
-        </div>
-        </section>
+          </section>
+          <section className="bottom-pics">
+          <div className="pics-container">
+             <img onClick={changePic} src={productOne} alt="shoe"/>
+             <img onClick={changePic} src={productTwo} alt="shoe"/>
+             <img onClick={changePic} src={productThree} alt="shoe"/>
+             <img onClick={changePic} src={productFour} alt="shoe"/>
+          </div>
+          </section>
+  
         </>
     )
 }

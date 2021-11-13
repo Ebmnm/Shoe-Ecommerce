@@ -6,7 +6,34 @@
     background-color: #f0f0f0;
     height: auto;
     position: relative;
+   
 }
 
-/* change to 100% and overflow hidden when finished */
 
+/* change to 100% and overflow hidden when finished..... maybe not */
+
+@media  (min-width: 1200px) {
+    .hero{
+   margin: 15% 15% ;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        width: 80%;
+        margin: 25% 10%;
+    }
+}
+@media (max-width: 700px) {
+    .hero {
+        margin: 25% auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:400px) {
+ .hero {
+     margin: 35% auto;
+ }
+}

@@ -5,7 +5,7 @@ import "../styles/hero.css"
 export default function Hero({amount, setAmount,  setCartAmount}) {
     return (
         <div className="hero">
-            <ImageGallery/>
+            <ImageGallery className="red"/>
             <TextCard setCartAmount={setCartAmount} amount={amount} setAmount={setAmount}/>
         </div>
     )
