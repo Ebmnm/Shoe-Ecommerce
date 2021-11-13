@@ -4,6 +4,7 @@ export default function TextCard({amount, setAmount, setCartAmount}) {
 
     function addToCart() {
         setCartAmount(prev => prev + amount)
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function addAmount(){
