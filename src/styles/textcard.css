@@ -6,6 +6,7 @@
     width: 280px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
 
 .subtitle {
@@ -79,6 +80,8 @@ margin: 0 5px;
 .quantity p {
     width: 30px;
     text-align: center;
+    font-size: 1.5em;
+
 }
 .quantity .minus{
     font-size: 4em;

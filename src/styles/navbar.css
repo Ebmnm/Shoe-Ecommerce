@@ -2,7 +2,7 @@ nav {
     height:12vh;
     width: 100%;
     border-bottom: 1px grey solid;
-    background-color: aliceblue !important;
+    background-color: white !important;
     position: absolute;
     left:0;
     top: 0;
@@ -12,6 +12,7 @@ nav {
     flex-direction: row;
     align-items: center;
 }
+
 
 .nav-content {
     display: flex;
@@ -32,7 +33,7 @@ nav {
 
 .nav-text h2:hover{
     color: black;
-    border-bottom: 3px solid hsl(26, 100%, 55%) ;
+    border-bottom: 5px solid hsl(26, 100%, 55%) ;
 }
 
 .nav-text h2{

@@ -20,6 +20,7 @@ export default function Cart({amount, setAmount, setShowCart, cartAmount, setCar
                         </div>
                         <button onClick={close}>X</button>
                     </div>}
+                    {cartAmount < 1 && <h4>Empty</h4>}
                    { cartAmount > 0 &&  <button onClick={close} className="checkout">Checkout</button>}
                 </div>
     )
