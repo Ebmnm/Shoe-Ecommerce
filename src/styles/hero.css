@@ -5,4 +5,7 @@
     width: 70%;
     background-color: #f0f0f0;
     height: auto;
+    position: relative;
 }
+
+/* change to 100% and overflow hidden when finished */

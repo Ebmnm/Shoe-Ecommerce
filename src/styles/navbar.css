@@ -7,6 +7,11 @@ nav {
     left:0;
     top: 0;
 }
+.right-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 .nav-content {
     display: flex;
@@ -21,21 +26,32 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    line-height: 110px;
+    margin-left:20px;
+}
+
+.nav-text h2:hover{
+    color: black;
+    border-bottom: 3px solid hsl(26, 100%, 55%) ;
 }
 
 .nav-text h2{
-    margin: 0 .6em;
+    margin: auto .6em;
     font-size: 1.3em;
     font-weight: 300;
     color: grey;
     cursor: pointer;
+    height: 100%;
+ 
+  
 }
 .logo{
     font-size: 2.4em;
     margin: 0;
     cursor: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  Helvetica;
     font-weight: 900;
+
 }
 
 .left-icons{
@@ -48,7 +64,23 @@ nav {
 img{
     cursor: pointer;
 }
+
+.left-icons .profile:hover{
+    border: 3px orange solid;
+    border-radius: 50%;
+}
 .cart{
     transform: scale(1.5);
     cursor: pointer;
+}
+
+.circle-number {
+    background-color: rgba(61, 168, 255, 0.993);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color:white;
+    position: absolute;
+    top:20px;
+    right:90px;
 }

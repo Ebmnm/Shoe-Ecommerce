@@ -1,6 +1,19 @@
 import React from 'react'
 import "../styles/textcard.css"
-export default function TextCard() {
+export default function TextCard({amount, setAmount, setCartAmount}) {
+
+    function addToCart() {
+        setCartAmount(prev => prev + amount)
+    }
+
+    function addAmount(){
+        setAmount(prev => prev + 1)
+    }
+
+    function takeAmount() {
+        if(amount < 1) return
+        setAmount(prev => prev - 1)
+    }
     return (
         <section className="text-card">
             <div className="text">
@@ -10,17 +23,17 @@ export default function TextCard() {
             </div>
             
             <div className="bottom-text-card">
-                <h2>$125   <p class="discount"> 50%</p>  </h2>
+                <h2>$125   <p className="discount"> 50%</p>  </h2>
                 <h3 className="last-price">$250</h3>
             </div>
 
             <div className="button-div">
             <span className="quantity">
-                <button className="minus">-</button>
-                <p>0</p>
-                <button>+</button>
+                <button onClick={takeAmount} className="minus">-</button>
+                <p>{amount}</p>
+                <button onClick={addAmount}>+</button>
             </span>
-            <button className="add-cart">Add to cart</button>
+            <button onClick={addToCart} className="add-cart">Add to cart</button>
 
             </div>
         </section>
